@@ -35,7 +35,7 @@ export default function ContactSection() {
               <h3 className="text-xs tracking-[0.25em] uppercase text-salon-gold mb-4">Kontakt</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="tel:+494165 8833" className="flex items-center gap-3 text-salon-dark hover:text-salon-gold transition-colors group">
+                  <a href="tel:+4941658833" className="flex items-center gap-3 text-salon-dark hover:text-salon-gold transition-colors group">
                     <span className="w-8 h-8 bg-salon-gold/10 group-hover:bg-salon-gold/20 flex items-center justify-center transition-colors">
                       <svg className="w-4 h-4 text-salon-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -45,7 +45,7 @@ export default function ContactSection() {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+494165 8898" className="flex items-center gap-3 text-salon-gray hover:text-salon-gold transition-colors group">
+                  <a href="tel:+4941658898" className="flex items-center gap-3 text-salon-gray hover:text-salon-gold transition-colors group">
                     <span className="w-8 h-8 bg-salon-gray/5 flex items-center justify-center">
                       <svg className="w-4 h-4 text-salon-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />

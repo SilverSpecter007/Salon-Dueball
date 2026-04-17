@@ -24,7 +24,7 @@ export default function ImpressumPage() {
 
           <h2>Kontakt</h2>
           <p>
-            Telefon: <a href="tel:+494165 8833">04165 8833</a><br />
+            Telefon: <a href="tel:+4941658833">04165 8833</a><br />
             Fax: 04165 8898<br />
             E-Mail: <a href="mailto:salon.dueball@gmail.com">salon.dueball@gmail.com</a>
           </p>

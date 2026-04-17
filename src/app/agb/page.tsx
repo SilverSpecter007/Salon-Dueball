@@ -110,7 +110,7 @@ export default function AGBPage() {
           </p>
 
           <p className="text-xs text-salon-gray/50 mt-8">
-            Stand: Januar 2024 · Salon Dueball · Jahnstraße 3 · 21279 Hollenstedt
+            Stand: April 2025 · Salon Dueball · Jahnstraße 3 · 21279 Hollenstedt
           </p>
         </div>
       </section>

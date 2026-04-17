@@ -48,10 +48,10 @@ export default function KontaktPage() {
                     </svg>
                     <div>
                       <p className="text-salon-dark font-medium">Telefon</p>
-                      <a href="tel:+494165 8833" className="text-salon-gray text-sm hover:text-salon-gold transition-colors mt-1 block">
+                      <a href="tel:+4941658833" className="text-salon-gray text-sm hover:text-salon-gold transition-colors mt-1 block">
                         04165 8833
                       </a>
-                      <a href="tel:+494165 8898" className="text-salon-gray text-sm hover:text-salon-gold transition-colors">
+                      <a href="tel:+4941658898" className="text-salon-gray text-sm hover:text-salon-gold transition-colors">
                         Fax: 04165 8898
                       </a>
                     </div>
@@ -130,7 +130,7 @@ export default function KontaktPage() {
                     Online buchen
                   </a>
                   <a
-                    href="tel:+494165 8833"
+                    href="tel:+4941658833"
                     className="flex-1 text-center border border-white/30 hover:border-white text-white py-3 text-sm tracking-wide transition-colors"
                   >
                     04165 8833 anrufen

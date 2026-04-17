@@ -1,7 +1,23 @@
 import type { Metadata } from 'next'
+import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+  weight: ['300', '400', '500', '600'],
+})
 
 export const metadata: Metadata = {
   title: {
@@ -43,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="bg-salon-cream text-salon-dark antialiased">
+      <body className={`${playfair.variable} ${inter.variable} bg-salon-cream text-salon-dark antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />
