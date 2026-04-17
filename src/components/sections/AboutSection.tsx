@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+const BASE = 'https://friseur-hollenstedt.de/wp-content/uploads'
+
 export default function AboutSection() {
   return (
     <section className="section-padding bg-salon-warm">
@@ -10,7 +12,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=85&auto=format"
+                src={`${BASE}/2025/03/IMG-20240502-WA0004.jpg`}
                 alt="Salon Dueball – Friseurin bei der Arbeit"
                 fill
                 className="object-cover"

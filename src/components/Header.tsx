@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const navLinks = [
@@ -24,36 +25,34 @@ export default function Header() {
   useEffect(() => { setMenuOpen(false) }, [pathname])
 
   const isHome = pathname === '/'
+  const light = !isScrolled && isHome && !menuOpen
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled || !isHome || menuOpen
-          ? 'bg-salon-cream/95 backdrop-blur-sm shadow-sm'
-          : 'bg-transparent'
+        light ? 'bg-transparent' : 'bg-salon-cream/95 backdrop-blur-sm shadow-sm'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none group">
-          <span
-            className={`font-serif text-xl font-semibold tracking-wide transition-colors ${
-              isScrolled || !isHome || menuOpen
-                ? 'text-salon-dark'
-                : 'text-white'
-            }`}
-          >
-            Salon Dueball
-          </span>
-          <span
-            className={`text-xs tracking-widest uppercase transition-colors ${
-              isScrolled || !isHome || menuOpen
-                ? 'text-salon-gold'
-                : 'text-salon-gold-light'
-            }`}
-          >
-            Hollenstedt
-          </span>
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative w-10 h-10 flex-shrink-0">
+            <Image
+              src="https://friseur-hollenstedt.de/wp-content/uploads/2026/03/Logo.webp"
+              alt="Salon Dueball Logo"
+              fill
+              className="object-contain"
+              sizes="40px"
+            />
+          </div>
+          <div className="flex flex-col leading-none">
+            <span className={`font-serif text-xl font-semibold tracking-wide transition-colors ${light ? 'text-white' : 'text-salon-dark'}`}>
+              Salon Dueball
+            </span>
+            <span className={`text-xs tracking-widest uppercase transition-colors ${light ? 'text-salon-gold-light' : 'text-salon-gold'}`}>
+              Hollenstedt
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
@@ -66,12 +65,8 @@ export default function Header() {
                   after:absolute after:bottom-[-4px] after:left-0 after:h-px after:bg-salon-gold
                   after:transition-all after:duration-300
                   ${pathname === link.href ? 'after:w-full' : 'after:w-0 hover:after:w-full'}
-                  ${
-                    isScrolled || !isHome || menuOpen
-                      ? 'text-salon-dark hover:text-salon-gold'
-                      : 'text-white/90 hover:text-white'
-                  }
-                  ${pathname === link.href ? (isScrolled || !isHome ? 'text-salon-gold' : 'text-white') : ''}
+                  ${light ? 'text-white/90 hover:text-white' : 'text-salon-dark hover:text-salon-gold'}
+                  ${pathname === link.href ? (light ? 'text-white' : 'text-salon-gold') : ''}
                 `}
               >
                 {link.label}
@@ -93,27 +88,13 @@ export default function Header() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`md:hidden flex flex-col gap-1.5 p-2 ${
-            isScrolled || !isHome || menuOpen ? 'text-salon-dark' : 'text-white'
-          }`}
+          className={`md:hidden flex flex-col gap-1.5 p-2 ${light ? 'text-white' : 'text-salon-dark'}`}
           aria-label="Menü öffnen"
           aria-expanded={menuOpen}
         >
-          <span
-            className={`block w-6 h-0.5 bg-current transition-all duration-300 ${
-              menuOpen ? 'rotate-45 translate-y-2' : ''
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-current transition-all duration-300 ${
-              menuOpen ? 'opacity-0' : ''
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-current transition-all duration-300 ${
-              menuOpen ? '-rotate-45 -translate-y-2' : ''
-            }`}
-          />
+          <span className={`block w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </nav>
 
@@ -129,9 +110,7 @@ export default function Header() {
               <Link
                 href={link.href}
                 className={`block py-2 text-base tracking-wide border-b border-salon-gray-light/50 ${
-                  pathname === link.href
-                    ? 'text-salon-gold font-medium'
-                    : 'text-salon-dark hover:text-salon-gold'
+                  pathname === link.href ? 'text-salon-gold font-medium' : 'text-salon-dark hover:text-salon-gold'
                 }`}
               >
                 {link.label}

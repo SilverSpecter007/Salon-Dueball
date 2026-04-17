@@ -1,29 +1,31 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+const BASE = 'https://friseur-hollenstedt.de/wp-content/uploads'
+
 const teamMembers = [
   {
     name: 'Annika Dueball',
     role: 'Inhaberin & Meisterin',
-    image: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0055SW.jpg`,
     specialty: 'Colorationen · Balayage',
   },
   {
     name: 'Julian',
     role: 'Stylist',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0070SW.jpg`,
     specialty: 'Herrenschnitte · Bartpflege',
   },
   {
     name: 'Tanja',
     role: 'Stylistin',
-    image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0045SW.jpg`,
     specialty: 'Haarschnitte · Styling',
   },
   {
     name: 'Bianca',
     role: 'Friseurmeisterin',
-    image: 'https://images.unsplash.com/photo-1629094280669-34bfd53a3d4a?w=400&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0036SW.jpg`,
     specialty: 'Haarschnitte · Colorationen',
   },
 ]

@@ -6,13 +6,15 @@ export const metadata: Metadata = {
   description: 'Das Team von Salon Dueball in Hollenstedt – Annika, Julian, Tanja, Bianca, Kathleen, Susan und Kim.',
 }
 
+const BASE = 'https://friseur-hollenstedt.de/wp-content/uploads'
+
 const team = [
   {
     name: 'Annika Dueball',
     role: 'Inhaberin & Meisterin',
     bio: 'Seit 2013 führt Annika Dueball, Meisterin des Friseurhandwerks, den Salon mit Leidenschaft und Fachkenntnis. Sie übernahm das traditionsreiche Friseurgeschäft „Christina Aldag" und hat es zu einem modernen Wohlfühlsalon entwickelt.',
     specialties: ['Colorationen', 'Balayage', 'Haarschnitte', 'Hochsteckfrisuren'],
-    image: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=500&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0055SW.jpg`,
     featured: true,
   },
   {
@@ -20,42 +22,42 @@ const team = [
     role: 'Stylist',
     bio: 'Julian ist unser Spezialist für Herrenhaarschnitte und Bartpflege – präzise, modern und immer mit dem richtigen Feel für aktuelle Trends.',
     specialties: ['Herrenschnitte', 'Bartpflege', 'Undercut'],
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0070SW.jpg`,
   },
   {
     name: 'Tanja',
     role: 'Stylistin',
     bio: 'Tanja begeistert mit einem guten Gespür für Schnitte und Styling – immer einfühlsam und mit viel Herzlichkeit.',
     specialties: ['Haarschnitte', 'Styling', 'Föhnen'],
-    image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=500&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0045SW.jpg`,
   },
   {
     name: 'Bianca',
     role: 'Friseurmeisterin',
     bio: 'Bianca ist ein erfahrenes Mitglied des Teams und begeistert mit präzisen Schnitten und wunderschönen Colorationen.',
     specialties: ['Haarschnitte', 'Colorationen', 'Balayage'],
-    image: 'https://images.unsplash.com/photo-1629094280669-34bfd53a3d4a?w=500&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0036SW.jpg`,
   },
   {
     name: 'Kathleen',
     role: 'Stylistin',
     bio: 'Kathleen versteht es, jeden Kunden individuell zu beraten und das Beste aus dem Haar herauszuholen.',
     specialties: ['Colorationen', 'Haarschnitte', 'Beratung'],
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=85&auto=format',
+    image: `${BASE}/2024/10/14584_0020SW.jpg`,
   },
   {
     name: 'Susan',
     role: 'Stylistin',
     bio: 'Susan ist Expertin für moderne Farbtechniken und bringt kreative Ideen in jeden Kundenwunsch ein.',
     specialties: ['Strähnentechniken', 'Colorationen', 'Styling'],
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&q=85&auto=format',
+    image: `${BASE}/2024/10/Susan.jpg`,
   },
   {
     name: 'Kim',
     role: 'Stylistin',
     bio: 'Kim bringt frischen Wind ins Team – mit einem Auge für Trends und einer Leidenschaft für Browlifting und Haarpflege.',
     specialties: ['Browlifting', 'Haarpflege', 'Haarschnitte'],
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&q=85&auto=format',
+    image: `${BASE}/2024/10/Kim-Joyce-Sophie.jpg`,
   },
 ]
 

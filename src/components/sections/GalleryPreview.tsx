@@ -1,24 +1,26 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+const BASE = 'https://friseur-hollenstedt.de/wp-content/uploads'
+
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80&auto=format',
-    alt: 'Balayage Coloration',
+    src: `${BASE}/2025/01/IMG_0636-768x1024.jpeg`,
+    alt: 'Haarstyling Salon Dueball',
     span: 'row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80&auto=format',
-    alt: 'Haarschnitt Styling',
+    src: `${BASE}/2025/01/IMG_0637-768x1024.jpeg`,
+    alt: 'Colorationen & Balayage',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1605497787639-4c2b56efac8f?w=600&q=80&auto=format',
-    alt: 'Haare waschen',
+    src: `${BASE}/2025/01/IMG_0638-768x1024.jpeg`,
+    alt: 'Haarschnitt & Styling',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80&auto=format',
+    src: `${BASE}/2025/01/IMG_0650-768x1024.jpeg`,
     alt: 'Strähnchen Technik',
     span: 'col-span-2',
   },

@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+const BASE = 'https://friseur-hollenstedt.de/wp-content/uploads'
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=85&auto=format"
+          src={`${BASE}/2024/11/IMG-20230709-WA0139.jpg`}
           alt="Salon Dueball – moderner Friseursalon in Hollenstedt"
           fill
           priority
