@@ -12,7 +12,7 @@ export default function ContactSection() {
     <section className="section-padding bg-salon-cream">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-salon-gold text-xs tracking-[0.3em] uppercase mb-4">Besuchen Sie uns</p>
+          <p className="text-salon-gold text-xs tracking-[0.3em] uppercase mb-4">Besuche uns</p>
           <h2 className="font-serif text-4xl md:text-5xl text-salon-dark mb-4">Kontakt & Anfahrt</h2>
           <span className="divider-gold" />
         </div>
@@ -85,7 +85,7 @@ export default function ContactSection() {
 
             {/* CTA */}
             <a
-              href="https://connect.shore.com/bookings/friseur-christina-aldag/services?locale=de"
+              href="https://connect.shore.com/bookings/salon-dueball/services?locale=de"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-salon-gold hover:bg-salon-gold-light text-white px-8 py-4 text-sm tracking-wide transition-all duration-300 w-full justify-center"
@@ -101,7 +101,7 @@ export default function ContactSection() {
           <div className="relative">
             <div className="w-full h-full min-h-[450px] bg-salon-gray-light overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5!2d9.745!3d53.373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zSmFobnN0cmHDn2UgMywgMjEyNzkgSG9sbGVuc3RlZHQ!5e0!3m2!1sde!2sde!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.4!2d9.7413!3d53.3772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b17d8f7e8b1c3d%3A0x3a2c5b9d1e4f6a7b!2sSalon%20Dueball!5e0!3m2!1sde!2sde!4v1713369600000!5m2!1sde!2sde"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '450px' }}
@@ -118,7 +118,7 @@ export default function ContactSection() {
               <p className="font-serif text-sm text-salon-dark font-medium">Salon Dueball</p>
               <p className="text-xs text-salon-gray mt-1">Jahnstraße 3 · 21279 Hollenstedt</p>
               <a
-                href="https://maps.google.com/?q=Jahnstra%C3%9Fe+3,+21279+Hollenstedt"
+                href="https://maps.google.com/?q=Salon+Dueball,+Jahnstra%C3%9Fe+3,+21279+Hollenstedt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-salon-gold hover:underline mt-2 block"

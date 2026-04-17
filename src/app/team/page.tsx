@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Team',
-  description: 'Das Team von Salon Dueball in Hollenstedt – Annika, Bianca, Jasmin, Canan und mehr.',
+  description: 'Das Team von Salon Dueball in Hollenstedt – Annika, Julian, Tanja, Bianca, Kathleen, Susan und Kim.',
 }
 
 const team = [
@@ -16,53 +16,25 @@ const team = [
     featured: true,
   },
   {
-    name: 'Bianca',
-    role: 'Friseurmeisterin',
-    bio: 'Bianca ist ein erfahrenes Mitglied des Teams und begeistert Kunden mit präzisen Schnitten und schönen Stylings.',
+    name: 'Julian',
+    role: 'Stylist',
+    bio: 'Julian ist unser Spezialist für Herrenhaarschnitte und Bartpflege – präzise, modern und immer mit dem richtigen Feel für aktuelle Trends.',
+    specialties: ['Herrenschnitte', 'Bartpflege', 'Undercut'],
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=85&auto=format',
+  },
+  {
+    name: 'Tanja',
+    role: 'Stylistin',
+    bio: 'Tanja begeistert mit einem guten Gespür für Schnitte und Styling – immer einfühlsam und mit viel Herzlichkeit.',
     specialties: ['Haarschnitte', 'Styling', 'Föhnen'],
-    image: 'https://images.unsplash.com/photo-1629094280669-34bfd53a3d4a?w=500&q=85&auto=format',
-  },
-  {
-    name: 'Jasmin',
-    role: 'Stylistin',
-    bio: 'Jasmin liebt es, mit Farbe zu arbeiten und bringt kreative Strähnentechniken in den Salon.',
-    specialties: ['Strähnentechniken', 'Colorationen', 'Balayage'],
-    image: 'https://images.unsplash.com/photo-1595956553066-fe24a8c33395?w=500&q=85&auto=format',
-  },
-  {
-    name: 'Canan',
-    role: 'Coloristin',
-    bio: 'Canan ist spezialisiert auf moderne Farbtechniken und kreiert natürlich wirkende Farbverläufe.',
-    specialties: ['Balayage', 'Ombré', 'Colorationen'],
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&q=85&auto=format',
-  },
-  {
-    name: 'Jana',
-    role: 'Stylistin',
-    bio: 'Jana bringt frischen Wind ins Team und begeistert mit Trends und modernen Looks.',
-    specialties: ['Haarschnitte', 'Styling', 'Coloration'],
     image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=500&q=85&auto=format',
   },
   {
-    name: 'Netti',
-    role: 'Stylistin',
-    bio: 'Netti steht für Herzlichkeit und höchste Qualität bei jedem Kundenwunsch.',
-    specialties: ['Haarschnitte', 'Pflege', 'Föhnen'],
-    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&q=85&auto=format',
-  },
-  {
-    name: 'Lisa-Marie',
-    role: 'Stylistin',
-    bio: 'Lisa-Marie ist Expertin für Browlifting und moderne Pflegebehandlungen.',
-    specialties: ['Browlifting', 'Haarpflege', 'Styling'],
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&q=85&auto=format',
-  },
-  {
-    name: 'Julian',
-    role: 'Stylist',
-    bio: 'Julian ist unser Spezialist für Herrenhaarschnitte und Bartpflege.',
-    specialties: ['Herrenschnitte', 'Bartpflege', 'Undercut'],
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=85&auto=format',
+    name: 'Bianca',
+    role: 'Friseurmeisterin',
+    bio: 'Bianca ist ein erfahrenes Mitglied des Teams und begeistert mit präzisen Schnitten und wunderschönen Colorationen.',
+    specialties: ['Haarschnitte', 'Colorationen', 'Balayage'],
+    image: 'https://images.unsplash.com/photo-1629094280669-34bfd53a3d4a?w=500&q=85&auto=format',
   },
   {
     name: 'Kathleen',
@@ -72,11 +44,18 @@ const team = [
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=85&auto=format',
   },
   {
-    name: 'Annette',
+    name: 'Susan',
     role: 'Stylistin',
-    bio: 'Annette ist für ihre ruhige und einfühlsame Art bekannt und macht jeden Salon-Besuch zum Wohlfühlerlebnis.',
-    specialties: ['Haarpflege', 'Styling', 'Colorationen'],
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=85&auto=format',
+    bio: 'Susan ist Expertin für moderne Farbtechniken und bringt kreative Ideen in jeden Kundenwunsch ein.',
+    specialties: ['Strähnentechniken', 'Colorationen', 'Styling'],
+    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&q=85&auto=format',
+  },
+  {
+    name: 'Kim',
+    role: 'Stylistin',
+    bio: 'Kim bringt frischen Wind ins Team – mit einem Auge für Trends und einer Leidenschaft für Browlifting und Haarpflege.',
+    specialties: ['Browlifting', 'Haarpflege', 'Haarschnitte'],
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&q=85&auto=format',
   },
 ]
 
@@ -91,7 +70,7 @@ export default function TeamPage() {
         <h1 className="font-serif text-5xl text-salon-dark mb-4">Unser Team</h1>
         <div className="divider-gold" />
         <p className="text-salon-gray mt-6 max-w-lg mx-auto px-6">
-          10 Fachkräfte, ein Ziel: Ihr perfekter Look. Wir sind eine echte Gemeinschaft –
+          7 Fachkräfte, ein Ziel: dein perfekter Look. Wir sind eine echte Gemeinschaft –
           verbunden durch Kreativität und die Liebe zum Friseurhandwerk.
         </p>
       </div>
@@ -165,10 +144,10 @@ export default function TeamPage() {
 
           {/* CTA */}
           <div className="text-center mt-20">
-            <p className="font-serif text-2xl text-salon-dark mb-2">Bereit für Ihren neuen Look?</p>
-            <p className="text-salon-gray mb-8">Unser Team freut sich auf Ihren Besuch.</p>
+            <p className="font-serif text-2xl text-salon-dark mb-2">Bereit für deinen neuen Look?</p>
+            <p className="text-salon-gray mb-8">Wir freuen uns auf deinen Besuch.</p>
             <a
-              href="https://connect.shore.com/bookings/friseur-christina-aldag/services?locale=de"
+              href="https://connect.shore.com/bookings/salon-dueball/services?locale=de"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-salon-gold hover:bg-salon-gold-light text-white px-10 py-4 text-sm tracking-wide transition-all duration-300"

@@ -19,7 +19,7 @@ export default function KontaktPage() {
     <>
       {/* Page Hero */}
       <div className="bg-salon-warm pt-32 pb-16 text-center">
-        <p className="text-salon-gold text-xs tracking-[0.3em] uppercase mb-4">Wir freuen uns auf Sie</p>
+        <p className="text-salon-gold text-xs tracking-[0.3em] uppercase mb-4">Wir freuen uns auf dich</p>
         <h1 className="font-serif text-5xl text-salon-dark mb-4">Kontakt</h1>
         <div className="divider-gold" />
       </div>
@@ -100,7 +100,7 @@ export default function KontaktPage() {
               {/* Map */}
               <div className="relative w-full h-72 bg-salon-gray-light overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5!2d9.745!3d53.373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zSmFobnN0cmHDn2UgMywgMjEyNzkgSG9sbGVuc3RlZHQ!5e0!3m2!1sde!2sde!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.4!2d9.7413!3d53.3772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b17d8f7e8b1c3d%3A0x3a2c5b9d1e4f6a7b!2sSalon%20Dueball!5e0!3m2!1sde!2sde!4v1713369600000!5m2!1sde!2sde"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -117,12 +117,12 @@ export default function KontaktPage() {
                 <h3 className="font-serif text-2xl mb-3">Termin buchen</h3>
                 <p className="text-white/60 text-sm mb-6 leading-relaxed">
                   Wir arbeiten hauptsächlich auf Terminbasis.
-                  Buchen Sie bequem online oder rufen Sie uns an.
+                  Buche bequem online oder ruf uns an.
                   Bei Absagen bitten wir um mind. 24h Vorabsage.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="https://connect.shore.com/bookings/friseur-christina-aldag/services?locale=de"
+                    href="https://connect.shore.com/bookings/salon-dueball/services?locale=de"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 text-center bg-salon-gold hover:bg-salon-gold-light text-white py-3 text-sm tracking-wide transition-colors"
@@ -140,7 +140,7 @@ export default function KontaktPage() {
 
               {/* Social */}
               <div className="bg-salon-warm p-6">
-                <p className="text-salon-dark font-medium mb-4">Folgen Sie uns</p>
+                <p className="text-salon-dark font-medium mb-4">Folge uns</p>
                 <div className="flex gap-4">
                   <a
                     href="https://www.instagram.com/salon_dueball_hollenstedt/"

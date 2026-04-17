@@ -9,22 +9,22 @@ const teamMembers = [
     specialty: 'Colorationen · Balayage',
   },
   {
-    name: 'Bianca',
-    role: 'Friseurmeisterin',
-    image: 'https://images.unsplash.com/photo-1629094280669-34bfd53a3d4a?w=400&q=85&auto=format',
+    name: 'Julian',
+    role: 'Stylist',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85&auto=format',
+    specialty: 'Herrenschnitte · Bartpflege',
+  },
+  {
+    name: 'Tanja',
+    role: 'Stylistin',
+    image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=85&auto=format',
     specialty: 'Haarschnitte · Styling',
   },
   {
-    name: 'Jasmin',
-    role: 'Stylistin',
-    image: 'https://images.unsplash.com/photo-1595956553066-fe24a8c33395?w=400&q=85&auto=format',
-    specialty: 'Strähnentechniken',
-  },
-  {
-    name: 'Canan',
-    role: 'Coloristin',
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=85&auto=format',
-    specialty: 'Balayage · Ombré',
+    name: 'Bianca',
+    role: 'Friseurmeisterin',
+    image: 'https://images.unsplash.com/photo-1629094280669-34bfd53a3d4a?w=400&q=85&auto=format',
+    specialty: 'Haarschnitte · Colorationen',
   },
 ]
 
@@ -39,7 +39,7 @@ export default function TeamPreview() {
           </h2>
           <span className="divider-gold mb-6" />
           <p className="text-salon-gray max-w-lg mx-auto">
-            Bianca, Jasmin, Canan, Jana, Netti, Annika, Lisa-Marie, Julian, Kathleen und Annette –
+            Annika, Julian, Tanja, Bianca, Kathleen, Susan und Kim –
             unser Team vereint Kreativität und Fachwissen.
           </p>
         </div>

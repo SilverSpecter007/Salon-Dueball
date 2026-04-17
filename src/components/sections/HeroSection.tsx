@@ -23,16 +23,16 @@ export default function HeroSection() {
           Seit 2013 in Hollenstedt
         </p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold leading-tight mb-6 animate-fade-in-up">
-          Ihr Friseur<br />mit Herz &amp; Know-how
+          Dein Friseur<br />mit Leib &amp; Seele
         </h1>
         <div className="divider-gold mb-6" />
         <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-10 animate-fade-in-up">
-          Balayage · Colorationen · Browlifting · Heiße Schere<br className="hidden md:block" />
-          Für Damen, Herren &amp; Kids
+          Schön, dass du da bist – hier kannst du entspannen<br className="hidden md:block" />
+          und den Alltag hinter dir lassen.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
           <a
-            href="https://connect.shore.com/bookings/friseur-christina-aldag/services?locale=de"
+            href="https://connect.shore.com/bookings/salon-dueball/services?locale=de"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-salon-gold hover:bg-salon-gold-light text-white px-8 py-4 text-sm tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-salon-gold/25"
@@ -43,7 +43,7 @@ export default function HeroSection() {
             Jetzt Termin buchen
           </a>
           <Link
-            href="/leistungen"
+            href="/preisliste"
             className="inline-flex items-center justify-center gap-2 border border-white/60 hover:border-white text-white hover:bg-white/10 px-8 py-4 text-sm tracking-wide transition-all duration-300"
           >
             Unsere Leistungen

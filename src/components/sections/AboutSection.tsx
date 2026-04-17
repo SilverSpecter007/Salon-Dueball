@@ -39,18 +39,18 @@ export default function AboutSection() {
             </p>
             <p className="text-salon-gray leading-relaxed mb-5">
               Nach der kompletten Renovierung im Sommer 2023 erstrahlt der Salon in neuem Glanz –
-              und das Team ist mit noch mehr Begeisterung dabei. Kreativität, Fachwissen und
-              herzliche Atmosphäre zeichnen jeden Besuch aus.
+              mit einem frischen Look und Premium-Produkten von Kérastase und L'Oréal Professionnel.
+              Unser Team vereint Kreativität, Fachwissen und herzliche Atmosphäre bei jedem Besuch.
             </p>
             <p className="text-salon-gray leading-relaxed mb-8">
-              Dass Stammkunden sogar regelmäßig aus Hamburg anreisen, ist das schönste
+              Dass Stammkunden regelmäßig aus Hamburg anreisen, ist das schönste
               Kompliment, das Annika und ihr Team bekommen können.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-8">
               {[
                 { value: '2013', label: 'Gegründet' },
-                { value: '10+', label: 'Teammitglieder' },
+                { value: '7',    label: 'Teammitglieder' },
                 { value: '2023', label: 'Renoviert' },
                 { value: '100%', label: 'Leidenschaft' },
               ].map(({ value, label }) => (
@@ -62,10 +62,10 @@ export default function AboutSection() {
             </div>
 
             <Link
-              href="/team"
+              href="/kontakt"
               className="inline-flex items-center gap-2 bg-salon-gold hover:bg-salon-gold-light text-white px-8 py-4 text-sm tracking-wide transition-all duration-300"
             >
-              Unser Team kennenlernen
+              Termin vereinbaren
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

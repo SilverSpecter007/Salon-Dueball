@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         salon: {
           dark:    '#1C1C1C',
-          gold:    '#C4A265',
-          'gold-light': '#D4B87A',
+          gold:    '#7B3FA0',
+          'gold-light': '#9B5CC4',
           cream:   '#FAFAF8',
           warm:    '#F5F2ED',
           gray:    '#8A8A8A',

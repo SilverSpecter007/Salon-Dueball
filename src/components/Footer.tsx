@@ -12,7 +12,7 @@ export default function Footer() {
             <h3 className="font-serif text-2xl mb-2">Salon Dueball</h3>
             <span className="text-salon-gold text-xs tracking-widest uppercase block mb-4">Hollenstedt</span>
             <p className="text-white/60 text-sm leading-relaxed">
-              Balayage · Browlifting · Heiße Schere · Colorationen<br />
+              Carecut · Browlifting · Haarverlängerung · K-Scan<br />
               Für Damen, Herren &amp; Kids –<br />mit Herz &amp; Know-how seit 2013.
             </p>
             <div className="flex gap-4 mt-6">
@@ -98,8 +98,8 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
           <p>© {year} Salon Dueball · Annika Dueball · Hollenstedt</p>
           <div className="flex gap-6">
-            <Link href="/impressum" className="hover:text-salon-gold transition-colors">Impressum</Link>
-            <Link href="/agb"       className="hover:text-salon-gold transition-colors">AGB</Link>
+            <Link href="/impressum"   className="hover:text-salon-gold transition-colors">Impressum</Link>
+            <Link href="/agb"         className="hover:text-salon-gold transition-colors">AGB</Link>
             <Link href="/datenschutz" className="hover:text-salon-gold transition-colors">Datenschutz</Link>
           </div>
         </div>

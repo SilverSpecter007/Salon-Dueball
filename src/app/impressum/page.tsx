@@ -29,6 +29,12 @@ export default function ImpressumPage() {
             E-Mail: <a href="mailto:salon.dueball@gmail.com">salon.dueball@gmail.com</a>
           </p>
 
+          <h2>Umsatzsteuer-Identifikationsnummer</h2>
+          <p>
+            Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />
+            <strong>DE 11/647/21/62</strong>
+          </p>
+
           <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
           <p>
             <strong>Berufsbezeichnung:</strong> Friseurmeisterin<br />

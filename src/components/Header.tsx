@@ -5,10 +5,9 @@ import { usePathname } from 'next/navigation'
 
 const navLinks = [
   { href: '/',            label: 'Home' },
-  { href: '/leistungen',  label: 'Leistungen' },
-  { href: '/team',        label: 'Team' },
-  { href: '/galerie',     label: 'Galerie' },
+  { href: '/preisliste',  label: 'Preisliste' },
   { href: '/kontakt',     label: 'Kontakt' },
+  { href: '/jobs',        label: 'Jobs' },
 ]
 
 export default function Header() {
@@ -22,7 +21,6 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Close menu on route change
   useEffect(() => { setMenuOpen(false) }, [pathname])
 
   const isHome = pathname === '/'
@@ -84,7 +82,7 @@ export default function Header() {
 
         {/* CTA */}
         <a
-          href="https://connect.shore.com/bookings/friseur-christina-aldag/services?locale=de"
+          href="https://connect.shore.com/bookings/salon-dueball/services?locale=de"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-salon-gold hover:bg-salon-gold-light text-white text-sm px-5 py-2.5 transition-colors duration-300"
@@ -142,7 +140,7 @@ export default function Header() {
           ))}
           <li className="pt-2">
             <a
-              href="https://connect.shore.com/bookings/friseur-christina-aldag/services?locale=de"
+              href="https://connect.shore.com/bookings/salon-dueball/services?locale=de"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center bg-salon-gold text-white py-3 text-sm tracking-wide"

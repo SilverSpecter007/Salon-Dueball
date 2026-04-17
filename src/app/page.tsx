@@ -8,7 +8,8 @@ import BrandsSection from '@/components/sections/BrandsSection'
 import ContactSection from '@/components/sections/ContactSection'
 
 export const metadata: Metadata = {
-  title: 'Salon Dueball – Ihr Friseur in Hollenstedt',
+  title: 'Salon Dueball – Dein Friseur in Hollenstedt',
+  description: 'Salon Dueball in Hollenstedt – dein Friseur mit Leib & Seele. Carecut, Browlifting, Haarverlängerung, K-Scan und mehr. Jetzt online Termin buchen.',
 }
 
 export default function HomePage() {

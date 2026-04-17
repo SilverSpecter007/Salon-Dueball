@@ -27,13 +27,13 @@ body {
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #F5F2ED; }
-::-webkit-scrollbar-thumb { background: #C4A265; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #7B3FA0; border-radius: 3px; }
 
-/* Gold divider utility */
+/* Divider utility */
 .divider-gold {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, #C4A265, #D4B87A);
+  background: linear-gradient(90deg, #7B3FA0, #9B5CC4);
   display: block;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@ body {
 .divider-gold-left {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, #C4A265, #D4B87A);
+  background: linear-gradient(90deg, #7B3FA0, #9B5CC4);
   display: block;
 }
 
