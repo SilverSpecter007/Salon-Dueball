@@ -3,73 +3,37 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Galerie',
-  description: 'Galerie von Salon Dueball in Hollenstedt – Haarschnitte, Colorationen, Balayage und Styling-Kreationen.',
+  description: 'Galerie von Salon Dueball in Hollenstedt – Haarschnitte, Colorationen, Balayage, Browlifting und Styling-Kreationen.',
 }
 
+const BASE = 'https://friseur-hollenstedt.de/wp-content/uploads'
+
 const images = [
-  {
-    src: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80&auto=format',
-    alt: 'Balayage Coloration – natürliche Farbverläufe',
-    category: 'Coloration',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800&q=80&auto=format',
-    alt: 'Moderner Damenhaarschnitt',
-    category: 'Schnitte',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1605497787639-4c2b56efac8f?w=800&q=80&auto=format',
-    alt: 'Haare waschen – entspannte Atmosphäre',
-    category: 'Salon',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&q=80&auto=format',
-    alt: 'Strähnchen Technik mit Folie',
-    category: 'Coloration',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80&auto=format',
-    alt: 'Professionelles Styling',
-    category: 'Styling',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?w=800&q=80&auto=format',
-    alt: 'Coloration – warme Töne',
-    category: 'Coloration',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=800&q=80&auto=format',
-    alt: 'Herrenhaarschnitt klassisch',
-    category: 'Schnitte',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80&auto=format',
-    alt: 'Hochsteckfrisur elegant',
-    category: 'Styling',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80&auto=format',
-    alt: 'Haarpflege Treatment',
-    category: 'Pflege',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80&auto=format',
-    alt: 'Föhnen und Stylen',
-    category: 'Styling',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1559599101-f09722fb4948?w=800&q=80&auto=format',
-    alt: 'Balayage – helle Strähnen',
-    category: 'Coloration',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1582095133179-bfd08e2fb6b8?w=800&q=80&auto=format',
-    alt: 'Moderner Langhaarschnitt',
-    category: 'Schnitte',
-  },
+  { src: `${BASE}/2026/02/Balayage.jpg`,                              alt: 'Balayage – natürliche Farbverläufe',          category: 'Coloration' },
+  { src: `${BASE}/2025/01/IMG_0636-768x1024.jpeg`,                    alt: 'Haarstyling Ergebnis',                        category: 'Styling' },
+  { src: `${BASE}/2026/02/Face-Framing-mit-soft-Balayage-Glossing.jpg`, alt: 'Face Framing mit softem Balayage & Glossing', category: 'Coloration' },
+  { src: `${BASE}/2025/01/IMG_0637-768x1024.jpeg`,                    alt: 'Colorationen & Highlights',                  category: 'Coloration' },
+  { src: `${BASE}/2026/02/Haarschnitt-L.jpg`,                         alt: 'Haarschnitt lang',                           category: 'Schnitte' },
+  { src: `${BASE}/2025/01/IMG_0638-768x1024.jpeg`,                    alt: 'Modernes Styling',                           category: 'Styling' },
+  { src: `${BASE}/2026/02/Klassische-Straehnen.jpg`,                  alt: 'Klassische Strähnchen (Folientechnik)',       category: 'Coloration' },
+  { src: `${BASE}/2025/01/IMG_0650-768x1024.jpeg`,                    alt: 'Haarpflege & Finish',                        category: 'Styling' },
+  { src: `${BASE}/2026/02/Haarschnitt-M.jpg`,                         alt: 'Haarschnitt mittellang',                     category: 'Schnitte' },
+  { src: `${BASE}/2025/11/0e519680148fd8df426217380c912ffb5909e916.jpg`, alt: 'Aktuelle Arbeit',                          category: 'Styling' },
+  { src: `${BASE}/2026/02/Faceframing-Extrem.jpg`,                    alt: 'Faceframing Extrem',                         category: 'Coloration' },
+  { src: `${BASE}/2025/11/3a5c5fbef6e833d0ea22e367654e02cf9fe310fd.jpg`, alt: 'Aktuelle Arbeit',                          category: 'Coloration' },
+  { src: `${BASE}/2026/02/Haarschnitt-S.jpg`,                         alt: 'Haarschnitt kurz',                           category: 'Schnitte' },
+  { src: `${BASE}/2025/11/771ef604a0899809be896e9e18a6af870e1ae359.jpg`, alt: 'Aktuelle Arbeit',                          category: 'Styling' },
+  { src: `${BASE}/2025/01/IMG_0653-768x1024.jpeg`,                    alt: 'Haarpflege Treatment',                       category: 'Pflege' },
+  { src: `${BASE}/2025/11/a5fff5ab100bc5e4c6c05c0db665bdbcea5a6e8f.jpg`, alt: 'Aktuelle Arbeit',                          category: 'Coloration' },
+  { src: `${BASE}/2024/11/50x30cm-Browbar-2.png`,                     alt: 'Browlifting & Brow Lamination',              category: 'Browlifting' },
+  { src: `${BASE}/2025/11/cc080a66e68818e4ec1465c335e4afd750fd0ec3.jpg`, alt: 'Aktuelle Arbeit',                          category: 'Styling' },
+  { src: `${BASE}/2026/02/KER_KSCAN_2023_MODEL_CAMERA_E4110300_1X1-1.jpg`, alt: 'K-Scan Haaranalyse',                    category: 'Pflege' },
+  { src: `${BASE}/2025/11/ef26a8bef3d56c2de26d77f945321b43cfb53ae9.jpg`, alt: 'Aktuelle Arbeit',                          category: 'Coloration' },
+  { src: `${BASE}/2025/08/WhatsApp-Bild-2025-08-13-um-17.17.20_f03aaf20-e1755250913647.jpg`, alt: 'Haarverlängerung', category: 'Haarverlängerung' },
+  { src: `${BASE}/2025/11/f6245e6e5d8515e823eff9717a843591fd1e9d52.jpg`, alt: 'Aktuelle Arbeit',                          category: 'Styling' },
 ]
 
-const categories = ['Alle', 'Coloration', 'Schnitte', 'Styling', 'Pflege', 'Salon']
+const categories = ['Alle', 'Coloration', 'Schnitte', 'Styling', 'Browlifting', 'Haarverlängerung', 'Pflege']
 
 export default function GaleriePage() {
   return (
@@ -80,14 +44,14 @@ export default function GaleriePage() {
         <h1 className="font-serif text-5xl text-white mb-4">Galerie</h1>
         <div className="divider-gold" />
         <p className="text-white/60 mt-6 max-w-lg mx-auto px-6">
-          Lassen Sie sich von unseren Kreationen inspirieren –
+          Lass dich von unseren Kreationen inspirieren –
           von natürlichen Alltagslooks bis zu aufwändigen Stylings.
         </p>
       </div>
 
       <section className="section-padding bg-salon-cream">
         <div className="max-w-6xl mx-auto px-6">
-          {/* Filter categories (static display) */}
+          {/* Filter categories (visual only) */}
           <div className="flex flex-wrap gap-3 justify-center mb-12">
             {categories.map((cat) => (
               <span
@@ -103,13 +67,10 @@ export default function GaleriePage() {
             ))}
           </div>
 
-          {/* Masonry-style grid */}
+          {/* Masonry grid */}
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
             {images.map((img, i) => (
-              <div
-                key={i}
-                className="relative overflow-hidden break-inside-avoid group"
-              >
+              <div key={i} className="relative overflow-hidden break-inside-avoid group">
                 <Image
                   src={img.src}
                   alt={img.alt}
@@ -130,7 +91,7 @@ export default function GaleriePage() {
           <div className="mt-16 text-center bg-salon-warm p-12">
             <p className="text-salon-gold text-xs tracking-[0.3em] uppercase mb-4">Mehr entdecken</p>
             <h3 className="font-serif text-3xl text-salon-dark mb-4">
-              Folgen Sie uns auf Instagram
+              Folge uns auf Instagram
             </h3>
             <p className="text-salon-gray mb-8 max-w-md mx-auto">
               Für die neuesten Looks, Farbtrends und Einblicke in den Salon-Alltag.

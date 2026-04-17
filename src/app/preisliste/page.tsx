@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
+
+const BASE = 'https://friseur-hollenstedt.de/wp-content/uploads'
 
 export const metadata: Metadata = {
   title: 'Preisliste',
@@ -122,6 +125,33 @@ export default function PreislistePage() {
           Bei besonders langem oder dichtem Haar kann ein Mehraufwand entstehen.
         </p>
       </div>
+
+      {/* Service highlights with real images */}
+      <section className="py-16 bg-salon-warm border-b border-salon-gray-light">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { src: `${BASE}/2026/02/Haarschnitt-S.jpg`,  label: 'Haarschnitt' },
+              { src: `${BASE}/2026/02/Balayage.jpg`,        label: 'Balayage' },
+              { src: `${BASE}/2024/11/50x30cm-Browbar-2.png`, label: 'Browlifting' },
+              { src: `${BASE}/2026/02/KER_KSCAN_2023_MODEL_CAMERA_E4110300_1X1-1.jpg`, label: 'K-Scan' },
+            ].map(({ src, label }) => (
+              <div key={label} className="relative aspect-square overflow-hidden group">
+                <Image
+                  src={src}
+                  alt={label}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                  <span className="text-white text-sm font-medium tracking-wide">{label}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="section-padding bg-salon-cream">
         <div className="max-w-5xl mx-auto px-6">
